@@ -1,0 +1,17 @@
+name: test
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  install:
+    strategy:
+      matrix:
+        os: [macos-14, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Homebrew/actions/setup-homebrew@master
+      - name: Install and test MatRust from this tap
+        run: |
+          brew tap leoom-labs/tap "$GITHUB_WORKSPACE"
+          brew install leoom-labs/tap/matrust
+          brew test leoom-labs/tap/matrust
+          ls "$(brew --prefix)/bin/matrust-pdf-worker"
