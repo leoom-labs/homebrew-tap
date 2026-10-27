@@ -1,7 +1,7 @@
 # MatRust: MATLAB-compatible numerical engine with a native desktop workspace.
 # Prebuilt release archives from https://github.com/leoom-labs/matrust/releases.
 class Matrust < Formula
-  desc "MATLAB-compatible numerical engine and desktop workspace"
+  desc "Numerical workspace that runs a subset of the MATLAB language"
   homepage "https://matrust.dev"
   version "0.1.1"
   license "GPL-3.0-or-later"
