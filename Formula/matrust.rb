@@ -15,7 +15,7 @@ class Matrust < Formula
   on_linux do
     depends_on arch: :x86_64
     url "https://github.com/leoom-labs/matrust/releases/download/v0.1.1/MatRust-0.1.1-linux-x64.tar.gz"
-    sha256 "025f3efadca1a479211f360e9bb8c6c3753e4b6e8193f5d573a88c920aa4319c"
+    sha256 "a43b6986a711d2ce8fb3453bcec47ceea5190859539cec092a908766c1fdaf64"
   end
 
   def install
