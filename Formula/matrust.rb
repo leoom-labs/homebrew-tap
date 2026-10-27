@@ -3,19 +3,19 @@
 class Matrust < Formula
   desc "MATLAB-compatible numerical engine and desktop workspace"
   homepage "https://matrust.dev"
-  version "0.1.0"
+  version "0.1.1"
   license "GPL-3.0-or-later"
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/leoom-labs/matrust/releases/download/v0.1.0/MatRust-0.1.0-macos-arm64.tar.gz"
-    sha256 "1e9e25c1a420eb5f2b48e5ba6a6f3f343b29f41e97f36504efab61415e855160"
+    url "https://github.com/leoom-labs/matrust/releases/download/v0.1.1/MatRust-0.1.1-macos-arm64.tar.gz"
+    sha256 "8018cb30aaf083eb46da074531bedaaeb1aecf75fb652eab7f93186c4c74077f"
   end
 
   on_linux do
     depends_on arch: :x86_64
-    url "https://github.com/leoom-labs/matrust/releases/download/v0.1.0/MatRust-0.1.0-linux-x64.tar.gz"
-    sha256 "4d3ed26fd71ba0dd8119154237e1367d64378ede7aa4674370cf353f5f11e011"
+    url "https://github.com/leoom-labs/matrust/releases/download/v0.1.1/MatRust-0.1.1-linux-x64.tar.gz"
+    sha256 "025f3efadca1a479211f360e9bb8c6c3753e4b6e8193f5d573a88c920aa4319c"
   end
 
   def install
